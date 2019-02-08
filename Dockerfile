@@ -21,6 +21,7 @@ RUN \
 
 RUN \
  sed -ri -e "s/^variables_order.*/variables_order=\"EGPCS\"/g" /etc/php/7.3/cli/php.ini &&\
+ echo "\nmemory_limit=-1" >> /etc/php/7.3/cli/php.ini &&\
  echo "xdebug.max_nesting_level=250" >> /etc/php/7.3/mods-available/xdebug.ini
 
 RUN \
