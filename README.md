@@ -6,7 +6,7 @@
 
 More help in Bitbucket's [Confluence](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-beta-792496469.html)
 
-Docker image at [smartapps/bitbucket-pipelines-debian-9](https://hub.docker.com/r/smartapps/bitbucket-pipelines-debian-10/) (no `CMD` as it is overriden by *Pipelines*)
+Docker image at [smartapps/bitbucket-pipelines-debian-10](https://hub.docker.com/r/smartapps/bitbucket-pipelines-debian-10/) (no `CMD` as it is overriden by *Pipelines*)
 
 ## Packages installed
 
@@ -22,7 +22,7 @@ Docker image at [smartapps/bitbucket-pipelines-debian-9](https://hub.docker.com/
 ## Sample `bitbucket-pipelines.yml`
 
 ```YAML
-image: smartapps/bitbucket-pipelines-debian-9
+image: smartapps/bitbucket-pipelines-debian-10
 pipelines:
   default:
     - step:
