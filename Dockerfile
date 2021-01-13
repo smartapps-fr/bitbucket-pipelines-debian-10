@@ -27,6 +27,6 @@ RUN \
  curl -sSL https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
  curl -sSL https://phar.phpunit.de/phpunit.phar -o /usr/bin/phpunit  && chmod +x /usr/bin/phpunit &&\
  curl -sSL https://codeception.com/codecept.phar -o /usr/bin/codecept && chmod +x /usr/bin/codecept &&\
- curl -sSL https://github.com/infection/infection/releases/download/0.12.0/infection.phar -o /usr/bin/infection && chmod +x /usr/bin/infection &&\
+ curl -sSL https://github.com/infection/infection/releases/download/0.17.7/infection.phar -o /usr/bin/infection && chmod +x /usr/bin/infection &&\
  npm install --no-color --production --global gulp-cli webpack mocha grunt yarn n &&\
  rm -rf /root/.npm /tmp/* /var/tmp/* /var/lib/apt/lists/* /var/log/*
