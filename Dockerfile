@@ -13,7 +13,7 @@ RUN \
  /usr/sbin/update-locale LANG=en_US.UTF-8 &&\
  echo "mysql-server mysql-server/root_password password root" | debconf-set-selections &&\
  echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections &&\
- apt-get -y --no-install-recommends install ca-certificates gnupg git subversion imagemagick openssh-client curl software-properties-common gettext zip unzip default-mysql-server default-mysql-client apt-transport-https ruby python python3 perl memcached geoip-database make ffmpeg &&\
+ apt-get -y --no-install-recommends install ca-certificates gnupg git subversion imagemagick openssh-client curl software-properties-common gettext zip unzip default-mysql-server default-mysql-client apt-transport-https ruby python python3 perl memcached geoip-database make ffmpeg rhash &&\
  curl -sSL https://deb.nodesource.com/setup_10.x | bash - &&\
  apt-get -y --no-install-recommends install php-apcu php-bcmath php-cli php-curl php-gd php-geoip php-gettext php-imagick php-intl php-json php-mbstring php-mysql php-sqlite3 php-xdebug php-xml php-xmlrpc php-zip php-memcached nodejs &&\
  apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* /var/log/*
